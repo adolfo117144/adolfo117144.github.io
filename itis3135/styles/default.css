@@ -1,0 +1,162 @@
+/*Appear throughout all webpages*/
+html {
+    background-color: rgb(90, 27, 27);
+    margin: 0 auto;
+    font-family: Roboto, Arial;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Header CSS*/
+h1 {
+    text-align: center;
+    color: rgb(129, 201, 227);
+    margin: 0;
+    padding: 40px;
+}
+
+header li {
+    color: rgb(129, 201, 227);
+}
+
+header nav ul{
+    margin: 0 auto;
+    list-style: none;
+    max-width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+/*in both footer and header*/
+li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+li a:hover {
+    background-color: white;
+    color: rgb(174, 63, 63);
+}
+/*end in both footer and header*/
+/*end Header CSS*/
+
+/*index.html CSS*/
+h2 {
+    text-align: center;
+    color: rgb(129, 201, 227);
+    line-height: 100px;
+    margin: 0;
+}
+
+p {
+    text-align: left;
+    color: rgb(129, 201, 227);
+    display: table;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/*end index.html CSS*/
+
+/*introduction.html CSS*/
+div {
+    margin: 0 auto;
+    display: table;
+}
+
+main img {
+    height: 30vw;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/*end introduction.html CSS*/
+
+/*about.html CSS*/
+/*h3 is also used in introduction*/
+h3 {
+    text-align: left;
+    color: rgb(129, 201, 227);
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+span {
+    font-weight: bold;
+}
+
+ul {
+    padding: 0 0;
+}
+
+p, main li {
+    color: rgb(129, 201, 227);
+    margin: 0 auto;
+    padding: 0 0;
+    max-width: 900px;
+    list-style-type: none;
+    line-height: 1.5em;
+}
+/*end about.html CSS*/
+
+/*Footer CSS*/
+h5 {
+    color: rgb(129, 201, 227);
+    font-weight: 300;
+    text-align: center;
+}
+
+h5 a{
+    text-decoration: none;
+    color: rgb(129, 201, 227);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: color 0.2s;
+}
+
+h5 a:hover {
+    color: white;
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 40%;
+    padding-top: 20px;
+    list-style: none;
+    color: rgb(129, 201, 227);
+    font-size: 1rem;
+}
+
+footer img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 200px;
+}
+
+footer em {
+    color: rgb(129, 201, 227);
+}
+
+h4 {
+    font-weight: 400;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+/*end footer CSS*/
