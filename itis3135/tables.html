@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="styles/default.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <section>
+                <h2>Tables</h2>
+                <h3>My Tabular Data</h3>
+                <ol>
+                    <li>Lillian Sander : lilsand@gmail.com - 1 year</li>
+                    <li>Theodore Roosevelt : theoroose12@yahoo.com - 6 years</li>
+                    <li>Ray Trahan: rtrahan@gmail.com - 4 years</li>
+                    <li>Timothy Turner : timturn3@gmail.com - 12 years</li>
+                    <li>Drake Graham : ovo24@gmail.com - 3 years</li>
+                    <li>Harold Kerry : harold1242@yahoo.com - 1 year</li>
+                    <li>Courage Smith : cour.smith124@gmail.com - 20 years</li>
+                </ol>
+                <h3>Employee Data in Simple Table</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                    <tr>
+                        <td>Lillian Sander</td>
+                        <td>lilsand@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Theodore Roosevelt</td>
+                        <td>theoroose12@yahoo.com</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Ray Trahan</td>
+                        <td>rtrahan@gmail.com</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Timothy Turner</td>
+                        <td>timturn3@gmail.com</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Drake Graham</td>
+                        <td>ovo24@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Harold Kerry</td>
+                        <td>harold1242@yahoo.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Courage Smith</td>
+                        <td>cour.smith124@gmail.com</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+                <h3>Employee Data in Complex Table</h3>
+                <figure>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Years of Service</th>
+                            <th>Monthly Salary</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Sales</td>
+                            <td>Lillian Sander</td>
+                            <td>lilsand@gmail.com</td>
+                            <td>1</td>
+                            <td>$2,000</td>
+                        </tr>
+                        <tr>
+                            <td>Theodore Roosevelt</td>
+                            <td>theoroose12@yahoo.com</td>
+                            <td>6</td>
+                            <td>$8,000</td>
+                        </tr>
+                        <tr>
+                            <td>Ray Trahan</td>
+                            <td>rtrahan@gmail.com</td>
+                            <td>4</td>
+                            <td>$4,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Sales</td>
+                            <td>Timothy Turner</td>
+                            <td>timturn3@gmail.com</td>
+                            <td>12</td>
+                            <td>$10,000</td>
+                        </tr>
+                        <tr>
+                            <td>Drake Graham</td>
+                            <td>ovo24@gmail.com</td>
+                            <td>3</td>
+                            <td>$3,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Designer</td>
+                            <td>Harold Kerry</td>
+                            <td>harold1242@yahoo.com</td>
+                            <td>1</td>
+                            <td>$1,500</td>
+                        </tr>
+                        <tr>
+                            <td>Courage Smith</td>
+                            <td>cour.smith124@gmail.com</td>
+                            <td>20</td>
+                            <td>$13,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total Years of Service</th>
+                            <td>47</td>
+                            <td>$41,500</td>
+                        </tr>
+                    </table>
+                    <figcaption>This table contains information on the best employees of this month!</figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
