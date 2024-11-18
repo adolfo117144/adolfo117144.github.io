@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Soccer Hobby Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+             /*Colors: f7dba7-605770-c57b57-8b9eb7-041f1e*/
+            html {
+                font-family: Roboto, Arial;
+                background-color: #f7dba7;
+            }
+
+            body {
+                max-width: 1400px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            main {
+                max-width: 1400px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            header {
+                max-width: 1400px;
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+            }
+
+            h1 {
+                font-size: 2.3rem;
+                color: #605770;
+            }
+
+            nav {
+                max-width: 1200px;
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            nav ul { 
+                list-style: none;
+                max-width: 1200px;
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-size: 1.3rem;
+                align-items: center;
+            }
+           
+            nav ul li a {
+                text-decoration: none;
+                color: #041f1e;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+            .ball {
+                font-size: 1.2rem;
+            }
+
+            a:hover {
+                color: #c57b57;
+            }
+
+            a {
+                color: #605770;
+                transition: color 0.3s;
+            }
+
+            section {
+                max-width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h2 {
+                color: #605770;
+            }
+
+            p {
+                font-size: 1.1rem;
+                line-height: 1.6rem;
+                color: #041f1e;
+            }
+
+            figure {
+                display: flex;
+                flex-direction: column;
+            }
+
+            img, iframe {
+                height: 400px;
+                width: 600px;
+                object-fit: cover;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            }
+
+            #ai ul {
+                list-style: none;
+                color: #041f1e;
+                font-size: 1.1rem;
+                line-height: 1.6rem;
+            }
+
+            figcaption {
+                font-style: italic;
+                font-size: 1rem;
+                padding-top: 2px;
+                text-align: center;
+            }
+
+            footer {
+                margin-top: auto;
+                text-align: center;
+            }
+
+            footer h5 {
+                font-size: 1rem;
+            }
+
+            #wcag {
+                height: 30px;
+                width: 100px;
+                object-fit: cover;
+            }
+
+            section {
+                display: none; /* Hide all sections by default */
+            }
+
+            section.active {
+                display: flex; /* Only show sections with the active class */
+                max-width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Soccer</h1>
+                <ul>
+                    <li><a href="#what" onclick="showSection('what')">What</a></li>
+                    <li class="ball">⚽</li>
+                    <li><a href="#who" onclick="showSection('who')">Who</a></li>
+                    <li class="ball">⚽</li>
+                    <li><a href="#when" onclick="showSection('when')">When</a></li>
+                    <li class="ball">⚽</li>
+                    <li><a href="#where" onclick="showSection('where')">Where</a></li>
+                    <li class="ball">⚽</li>
+                    <li><a href="#how" onclick="showSection('how')">How</a></li>
+                    <li class="ball">⚽</li>
+                    <li><a href="#why" onclick="showSection('why')">Why</a></li>
+                    <li class="ball">⚽</li>
+                    <li><a href="#ai" onclick="showSection('ai')">AI Prompts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="what" class="active">
+                <h2>What is Soccer?</h2>
+                <p>Soccer, or football as it's called in many countries, is a popular team sport played on a rectangular field with goals at each end. The main goal of the game is to score 
+                    by getting a ball into the other team's goal, and players can use any part of their body except their hands and arms to do this. Each team has eleven players, including a goalkeeper who is the 
+                    only one allowed to use their hands, but only in a specific area near the goal. 
+                    A typical match lasts 90 minutes, divided into two halves of 45 minutes each, with a short break in between.
+                </p>
+                <p>Soccer is the most popular sport in the world, with millions of fans and players. Big tournaments like the FIFA World Cup and UEFA Champions League bring huge crowds and 
+                    create exciting rivalries among countries and clubs. The game focuses on teamwork and skill, and many players are celebrated for their talent and athleticism. 
+                    Soccer also brings people together, creating a strong sense of community and national pride as fans cheer for their favorite teams.
+                </p>
+                <figure>
+                    <img src="images/soccer-488700_1280.jpg" alt="soccer ball in stadium">
+                    <figcaption>The 2014 world cup ball</figcaption>
+                </figure>
+            </section>
+            <section id="who">
+                <h2>Who am I?</h2>
+                <p>My name is Adolfo Martinez and ever since I was 6 years old I have been playing soccer.</p>
+                <p>I think soccer really impacted how I was raised I love working in a team and have a competetive side to me.
+                    Soccer has helped me with my emotions as well growing up, nothing like kicking the ball with friends or by yourself in the fall, it is truly therapeutic.
+                    Also being able to make life-long friends through this sport is awesome, every time I played a game I felt closer to my teammates, it is indeed a beautiful sport.
+                </p>
+                <figure>
+                    <img src="images/IMG_2030 (1).jpg" alt="picture of me in peru">
+                    <figcaption>In Peru</figcaption>
+                </figure>
+            </section>
+            <section id="when">
+                <h2>When to play?</h2>
+                <p>The best times to play soccer depend on the weather, how fit you feel, and what time of day it is. Playing when it's cooler, like in the morning or late afternoon, keeps you 
+                    from getting too hot and tired, especially if it's summer, but preferably playing in the fall or spring is the best time. 
+                    Fall and spring are great for outdoor soccer since the weather is mild, but indoor facilities work all year, so you can play whenever, no matter the weather.
+                </p>
+                <p>It's also good to think about how much energy you have and when you last played or worked out. Soccer requires a lot of energy, so playing after a rest day can help you feel stronger and avoid getting 
+                    hurt. Playing a few times a week keeps you fit and helps you get better, but it's important to rest between games. 
+                    For team games or leagues, weekends are often the easiest, giving you time to rest and recharge before your next game.
+                </p>
+                <figure>
+                    <img src="images/soccer-4586282_1280.jpg" alt="soccer ball in leaves">
+                    <figcaption>Ball in the Fall Leaves</figcaption>
+                </figure>
+            </section>
+            <section id="where">
+                <h2>Where to play?</h2>
+                <p>You can play soccer in lots of places, depending on what's around and how serious you want to be. The best spots are real soccer fields, which usually have goals, lines, and either grass or 
+                    turf that's good for playing on. Turf fields are great because they're easy to play on all year, 
+                    and they make the game faster. For colder or rainy days, indoor soccer fields are perfect, giving you a place to play no matter the weather.
+                </p>
+                <p>If you're just playing for fun, any open space can work, like a park, schoolyard, or even a parking lot. You don't need real goals, cones or backpacks work just fine. 
+                    These casual places are great for just kicking around with friends or family without worrying about strict rules. 
+                    Whether it's a real field or just an open space, it's all about finding what works for you nearby.
+                </p>
+                <p>Here in Charlotte I usually try and go to <a href="https://pickup.strikerssoccer.com/" target="_blank"><strong>Strikers</strong></a>, It's an awesome outside soccer complex with some turf fields and you get to play in a 5v5 setting for an hour
+                    for less than $10.
+                </p>
+                <figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d104108.82722099437!2d-80.92129091862499!3d35.370512831253635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d35.3744321!2d-80.83992339999999!4m5!1s0x8856a7b8a34c0689%3A0x3f16524d846249bb!2s11725%20Alexandriana%20Rd%2C%20Huntersville%2C%20NC%2028078!3m2!1d35.3705408!2d-80.83888979999999!5e0!3m2!1sen!2sus!4v1729887553411!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <figcaption>Strikers Huntersville location</figcaption>
+                </figure>
+            </section>
+            <section id="how">
+                <h2>How to play?</h2>
+                <p>To play soccer, you try to get the ball into the other team's goal without using your hands (only the goalie can do that). The game starts with a kickoff in the middle, and 
+                    players pass the ball, dribble it, and move around to get closer to the goal. 
+                    You work with your teammates to find open spaces and keep the ball moving toward the goal.
+                </p>
+                <p>Defending means stopping the other team from scoring. You stay close to the other team's players, try to steal the ball, and block their way without breaking the rules. When someone scores, 
+                    the other team gets the ball for a kickoff. There are two halves, and whoever scores the most goals wins. 
+                    The game is all about teamwork, strategy, and talking to your teammates to stay in control.
+                </p>
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qknP-E-vPQ4?si=9pHQIVLQ_R8dccYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <figcaption>How to play Soccer</figcaption>
+                </figure>
+            </section>
+            <section id="why">
+                <h2>Why should you play?</h2>
+                <p>I think everyone should try a sport it doesn't have to be soccer of course but if you do it is an awesome team building sport and a lot of fun all while working out.
+                    Soccer does require a lot of energy so it also burns a lot of calories and builds some strong leg muscles while playing. In this sport you can make life-long friends
+                    and you can figure out your weaknesses.
+                </p>
+                <p>I feel like working in a team is so important in life. Being able to communicate effectively is a pillar in anything in life. Either in relationships, workplace, or with 
+                    your teammates. It's overall an important skill to have and being able to do all of these things with a sport is amazing. Like I said before too playing this could feel 
+                    therapeutic being able to improve yourself day after day is awesome and rewarding, really helps one's emotional state. 
+                </p>
+                <figure>
+                    <img src="images/team-1928848_1280.jpg" alt="team in a huddle">
+                    <figcaption>Team</figcaption>
+                </figure>
+            </section>
+            <section id="ai">
+                <h2>AI Prompts</h2>
+                <ul>
+                    <li>"How do I implement a google maps location into my HTML document?"</li>
+                    <li>"How do I implement a video into my HTML document?"</li>
+                    <li>"Could you check for spelling errors and simplify these paragraphs for me?"</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Page designed by <a href="../martinezinc.co/index.html" target="_blank">Martinez inc.</a> &#169;2024</p>
+            <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/amart268/itis3135/hobby/index.html" target="_blank">
+                <img src="images/button_validation_wcag-1.png" alt="Accessibility Validation" id="wcag">
+            </a>
+        </footer>
+        <script>
+           function showSection(id) {
+                //Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                //Show the selected section
+                document.getElementById(id).classList.add('active');
+            }
+
+            //Show the "What" section by default on load
+            window.addEventListener('DOMContentLoaded', () => {
+                showSection('what');
+            });
+         </script>
+    </body>
+</html>

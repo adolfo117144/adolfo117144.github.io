@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>First Scripts Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="styles/default.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>First Scripts</h2>
+            <h3 id="date"></h3>
+            <form id="formUserFunction">
+                <label for="name"><span>Enter your name:</span></label>
+                <input id="name" type="text" placeholder="Name" required>
+                <label for="mood"><span>How are you doing?</span></label>
+                <input id="mood" type="text" required>
+                <label for="polygon"><span>Enter your favorite number (0-10):</span></label>
+                <input id="polygon" type="text" placeholder="Favorite Number" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="greetingMessage"></p>
+            <p id="polygonMessage"></p>
+
+            <section id="firstScriptsSection">
+                <button onclick="randomGymMotivation()">Get some Gym Motivation!</button>
+                <button onclick="trackCaloriesBurned()">Calorie Tracker</button>
+                <button onclick="recommendProteinShake()">Protein Shake Recommender</button>
+                <button onclick="calculateWorkoutIntensity()">Calculate Workout Intensity</button>
+            </section>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/defaultscripts.js"></script>
+    </body>
+</html>

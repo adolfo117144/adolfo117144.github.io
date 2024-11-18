@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Slideshow Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="styles/default.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Slideshow</h2>
+            <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 14</div>
+                  <img src="images/premium_photo-1664303293318-78ef76a67777.avif" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 14</div>
+                  <img src="images/photo-1452441271666-5d998aa2f6cc.avif" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 14</div>
+                  <img src="images/premium_photo-1675237625619-4fdb5e21ef87.avif" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">4 / 14</div>
+                  <img src="images/photo-1582258514015-1be36bef6e19.avif" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 14</div>
+                  <img src="images/photo-1635883778327-dd682ac38ecc.avif" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">6 / 14</div>
+                  <img src="images/premium_photo-1723161842120-af0d30950596.avif" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 14</div>
+                    <img src="images/premium_photo-1661962655543-b88aafe382e9.avif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 14</div>
+                    <img src="images/photo-1558204692-5f402fe220b9.avif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 14</div>
+                    <img src="images/premium_photo-1661841439995-1706237c83dc.avif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 14</div>
+                    <img src="images/photo-1620775997780-a01e050a9db4.avif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 14</div>
+                    <img src="images/photo-1542313337-c6a6ffb1ac12.avif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 14</div>
+                    <img src="images/photo-1419242902214-272b3f66ee7a.avif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">13 / 14</div>
+                    <img src="images/premium_photo-1663050826177-a4c2c228d96d.avif" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">14 / 14</div>
+                    <img class="help" src="images/photo-1518709594023-6eab9bab7b23.avif" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/premium_photo-1664303293318-78ef76a67777.avif" style="width:100%" onclick="currentSlide(1)" alt="A - Antelope">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1452441271666-5d998aa2f6cc.avif" style="width:100%" onclick="currentSlide(2)" alt="D - Dog">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/premium_photo-1675237625619-4fdb5e21ef87.avif" style="width:100%" onclick="currentSlide(3)" alt="O - Orange">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1582258514015-1be36bef6e19.avif" style="width:100%" onclick="currentSlide(4)" alt="L - Lamborghini">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1635883778327-dd682ac38ecc.avif" style="width:100%" onclick="currentSlide(5)" alt="F - Firetruck">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="images/premium_photo-1723161842120-af0d30950596.avif" style="width:100%" onclick="currentSlide(6)" alt="O - Octupus">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/premium_photo-1661962655543-b88aafe382e9.avif" style="width:100%" onclick="currentSlide(7)" alt="M - Monkey">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1558204692-5f402fe220b9.avif" style="width:100%" onclick="currentSlide(8)" alt="A - Airport">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/premium_photo-1661841439995-1706237c83dc.avif" style="width:100%" onclick="currentSlide(9)" alt="R - Reef">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1620775997780-a01e050a9db4.avif" style="width:100%" onclick="currentSlide(10)" alt="T - Teeth">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1542313337-c6a6ffb1ac12.avif" style="width:100%" onclick="currentSlide(11)" alt="I - Iguana">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1419242902214-272b3f66ee7a.avif" style="width:100%" onclick="currentSlide(12)" alt="N - Night">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/premium_photo-1663050826177-a4c2c228d96d.avif" style="width:100%" onclick="currentSlide(13)" alt="E - Elephant">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/photo-1518709594023-6eab9bab7b23.avif" style="width:100%" onclick="currentSlide(14)" alt="Z - Zebra">
+                  </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
